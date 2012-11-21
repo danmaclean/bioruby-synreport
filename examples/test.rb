@@ -6,7 +6,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
   require 'bio-synreport'
   require 'pp'
   
-  #this is how you use it...
+  #this is how you use it... no really! 
   
   db = Bio::Util::SynReport.new(:gff => ARGV[0], :fasta => ARGV[1], :verbose => true)
   chr, pos, ref,alt = 'Chr2',7634495, 'a', 't'
