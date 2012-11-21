@@ -5,25 +5,28 @@
 
 Gem::Specification.new do |s|
   s.name = "bio-synreport"
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dan MacLean"]
-  s.date = "2012-11-20"
-  s.description = "TODO: longer description of your gem"
+  s.date = "2012-11-21"
+  s.description = "Takes a GFF and genomic sequence file, constructs CDS and when given a position and alternative base will report whether this change is in a coding region and if it results in a synonymous or non-synonymous mutation."
   s.email = "maclean.daniel@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
   s.files = [
-    ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bio-synreport.gemspec",
+    "examples/test.rb",
     "lib/bio-synreport.rb",
+    "lib/bio/utils/bio-synreport.rb",
     "test/helper.rb",
     "test/test_bio-synreport.rb"
   ]
@@ -31,7 +34,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.11"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Reports whether a nucleotide change results in synonymous or non-synonymous mutations"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
