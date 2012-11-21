@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bio-synreport"
   gem.homepage = "http://github.com/danmaclean/bioruby-synreport"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Reports whether a nucleotide change results in synonymous or non-synonymous mutations}
+  gem.description = %Q{Takes a GFF and genomic sequence file, constructs CDS and when given a position and alternative base will report whether this change is in a coding region and if it results in a synonymous or non-synonymous mutation.}
   gem.email = "maclean.daniel@gmail.com"
   gem.authors = ["Dan MacLean"]
   # dependencies defined in Gemfile
