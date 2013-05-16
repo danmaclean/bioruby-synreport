@@ -1,6 +1,29 @@
 = bio-synreport
 
-Description goes here.
+A gem that takes gene CDS sequences and GFF as input. From this a database is created and the user can interrogate the database object.The user may then pass a chromosome ID, a position and an alternative nucleotide. The database will return information about whether the suggested substitution creates a synonymous or non-synonymous substitution, and the identity of the changes as a hash with many attributes.
+
+For example,
+
+	 db = Bio::Util::SynReport.new(:gff => 'some_gff.gff', :fasta => 'some_cds.fa', :verbose => true)
+  	 chr, pos, ref,alt = 'Chr2', 15973794, 'C', 'T'
+  	 pp db.mutation_info(chr,pos,alt) 
+
+Would return something like,
+	{
+	:chr => 'Chr2', 
+    :strand => '-', 
+    :position => 15973794,
+    :original_codon => 'atg', 
+    :original_residue => 'Met', 
+    :mutant_codon => 'ttg', 
+    :mutant_residue => 'Lys', 
+    :position_in_codon => 1, 
+    :substitution_type => 'NON_SYN'
+     }
+
+== To Do
+
+The module isn't the fastest thing in the world. Needs much speeding up...
 
 == Contributing to bio-synreport
  

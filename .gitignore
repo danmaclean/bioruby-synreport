@@ -46,3 +46,6 @@ pkg
 
 # For rubinius:
 #*.rbc
+
+bin/*
+lib/bio/utils/bio-synreport_orig.rb
