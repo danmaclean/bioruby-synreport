@@ -9,8 +9,8 @@ For example,
   	 pp db.mutation_info(chr,pos,alt) 
 
 Would return something like,
-	{
-	:chr => 'Chr2', 
+    {
+    :chr => 'Chr2', 
     :strand => '-', 
     :position => 15973794,
     :original_codon => 'atg', 
