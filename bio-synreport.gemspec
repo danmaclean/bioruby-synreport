@@ -5,6 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "bio-synreport"
+<<<<<<< HEAD
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -17,13 +18,18 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".document",
     "Gemfile",
+    "Gemfile.lock",
+
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bio-synreport.gemspec",
+    "examples/test.rb",
     "lib/bio-synreport.rb",
+    "lib/bio/utils/bio-synreport.rb",
+
     "test/helper.rb",
     "test/test_bio-synreport.rb"
   ]
@@ -31,7 +37,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.11"
-  s.summary = "TODO: one-line summary of your gem"
+
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
