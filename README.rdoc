@@ -4,7 +4,7 @@ A gem that takes gene CDS sequences and GFF as input. From this a database is cr
 
 For example,
 
-	 db = Bio::Util::SynReport.new(:gff => 'some_gff.gff', :fasta => 'some_cds.fa', :verbose => true)
+  	 db = Bio::Util::SynReport.new(:gff => 'some_gff.gff', :fasta => 'some_cds.fa', :verbose => true)
   	 chr, pos, ref,alt = 'Chr2', 15973794, 'C', 'T'
   	 pp db.mutation_info(chr,pos,alt) 
 
