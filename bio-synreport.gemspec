@@ -4,45 +4,47 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "bio-synreport"
-<<<<<<< HEAD
-  s.version = "0.0.0"
+  s.name = %q{bio-synreport}
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dan MacLean"]
-  s.date = "2012-11-20"
-  s.description = "TODO: longer description of your gem"
-  s.email = "maclean.daniel@gmail.com"
+  s.date = %q{2013-05-16}
+  s.description = %q{Takes a GFF and genomic sequence file, constructs CDS and when given a position and alternative base will report whether this change is in a coding region and if it results in a synonymous or non-synonymous mutation.}
+  s.email = %q{maclean.daniel@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
   s.files = [
+    ".document",
     "Gemfile",
     "Gemfile.lock",
-
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "bio-synreport.gemspec",
+    "examples/test.fa",
+    "examples/test.gff",
     "examples/test.rb",
     "lib/bio-synreport.rb",
     "lib/bio/utils/bio-synreport.rb",
-
     "test/helper.rb",
+    "test/sample.gff",
     "test/test_bio-synreport.rb"
   ]
-  s.homepage = "http://github.com/danmaclean/bioruby-synreport"
+  s.homepage = %q{http://github.com/danmaclean/bioruby-synreport}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.11"
-
+  s.rubygems_version = %q{1.3.6}
+  s.summary = %q{Reports whether a nucleotide change results in synonymous or non-synonymous mutations}
 
   if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
